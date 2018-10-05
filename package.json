@@ -1,0 +1,25 @@
+{
+  "name": "blob-stream-browserify",
+  "license": "MIT",
+  "description": "A Node-style writable stream for HTML5 Blobs -- Browserified!",
+  "version": "0.1.3",
+  "homepage": "https://github.com/devongovett/blob-stream",
+  "author": {
+    "name": "Devon Govett",
+    "email": "devongovett@gmail.com",
+    "url": "http://badassjs.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cns-iu/blob-stream-browserify.git"
+  },
+  "bugs": "https://github.com/devongovett/blob-stream/issues",
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "blob-stream": "^0.1.3"
+  },
+  "scripts": {
+    "build": "rm -f index.js && browserify -s blobStream node_modules/blob-stream -o index.js"
+  },
+  "main": "index.js"
+}
